@@ -1,0 +1,30 @@
+{
+  "name": "CSVeat",
+  "version": "0.0.1",
+  "description": "Build an Adapt course structure from a CSV file.",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomgreenfield/CSVeat.git"
+  },
+  "author": "Tom Greenfield",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/tomgreenfield/CSVeat/issues"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "csv-parse": "0.0.6",
+    "download": "^4.0.0",
+    "path": "^0.11.14",
+    "underscore": "^1.7.0",
+    "xml2js": "^0.4.5"
+  },
+  "devDependencies": {},
+  "bin": {
+    "csveat": "./bin/csveat"
+  }
+}

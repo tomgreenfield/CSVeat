@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var csveat = require("../csveat.js");
+
+csveat.csveat();
