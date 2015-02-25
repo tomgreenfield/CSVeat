@@ -64,12 +64,14 @@ function parseCSV() {
 	parse(csv, function(err, output) {
 		if (!err) console.log("CSVeating...");
 
-		var width = output[0].length; 
+		var width = _.reduce(output[0], function(length, i) {
+			return length + (i !== "" ? 1 : 0);
+		}, 0);
 		var height = output.length;
 
-		for (var i = 1; i < height; i++) {
-			// fill in blanks
+		// fill in blanks
 
+		for (var i = 2; i < height; i++) {
 			for (var j = 0; j < width; j++) {
 				if (output[i][j]) continue;
 
@@ -77,7 +79,9 @@ function parseCSV() {
 
 				if (hasIdenticalParents) output[i][j] = output[i - 1][j];
 			}
+		}
 
+		for (var i = 1; i < height; i++) {
 			replacements.articleID = output[i][width - 4];
 			replacements.blockID = output[i][width - 3];
 			replacements.componentID = output[i][width - 2];

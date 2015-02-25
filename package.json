@@ -1,6 +1,6 @@
 {
   "name": "csveat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Build an Adapt course structure from a CSV file.",
   "main": "",
   "scripts": {
