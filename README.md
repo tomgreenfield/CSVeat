@@ -31,11 +31,12 @@ csveat <file>
         |                |                | a-15    | b-30  | c-35      | media
         | co-20          |                | a-20    | b-35  | c-40      | mcqsingle
         |                |                |         |       | c-45      | mcqmultiple2
-        |                |                |         | b-40  | c-50      | mcqmultiple1
-        |                |                |         |       | c-55      | matching
+        |                |                |         | b-40  | c-50      | mcqmultiple
+        |                |                |         |       | c-55      | mcqindividual
         |                |                |         | b-45  | c-60      | textinput
-        |                |                |         | b-50  | c-65      | gmcq
-        |                |                |         | b-55  | c-70      | slider
+        |                |                |         |       | c-65      | matching
+        |                |                |         | b-50  | c-70      | gmcq
+        |                |                |         | b-55  | c-75      | slider
 * The first row needs to be the headers.
 * You may have 1 to ∞ content object columns.
 * Please see [here](https://github.com/tomgreenfield/AdaptHelper/tree/master/Snippets) for the snippets referenced. Use the tab triggers in the type column.
